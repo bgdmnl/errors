@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>400 Bad Request</title>
+<style>
+body {
+  background: #111;
+  color: #fff;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+h1 {
+  font-size: 6rem;
+  color: #ff4444;
+  animation: glitch 1s infinite;
+}
+p { color: #aaa; }
+@keyframes glitch {
+  0% { text-shadow: 2px 0 #00ffea, -2px 0 #ff44aa; }
+  20% { text-shadow: -2px 0 #00ffea, 2px 0 #ff44aa; }
+  40% { text-shadow: 2px 0 #00ffea, -2px 0 #ff44aa; }
+  60% { text-shadow: -2px 0 #00ffea, 2px 0 #ff44aa; }
+  80% { text-shadow: 2px 0 #00ffea, -2px 0 #ff44aa; }
+  100% { text-shadow: -2px 0 #00ffea, 2px 0 #ff44aa; }
+}
+a {
+  color: #ff4444; margin-top: 20px; text-decoration: none;
+  border: 1px solid #ff4444; padding: 8px 16px; border-radius: 4px;
+}
+a:hover { background: #ff4444; color: #fff; }
+</style>
+</head>
+<body>
+  <h1>400</h1>
+  <p>Bad Request — something’s wrong with what you sent.</p>
+  <a href="/">Go Home</a>
+</body>
+</html>

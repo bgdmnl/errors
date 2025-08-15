@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>503 Service Unavailable</title>
+    <style>
+        body {
+            background: #0e0e0e;
+            color: #f05454;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            height: 100vh; text-align: center;
+        }
+        h1 {
+            font-size: 5rem;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); color: #f05454; }
+            50% { transform: scale(1.1); color: #ff7777; }
+        }
+        p { color: #ccc; }
+        a {
+            margin-top: 20px; color: #f05454; text-decoration: none; border: 1px solid #f05454; padding: 8px 16px; border-radius: 4px;
+        }
+        a:hover { background: #f05454; color: #fff; }
+    </style>
+</head>
+<body>
+<h1>503</h1>
+<p>Service Unavailable — please try again later.</p>
+<a href="/">Retry</a>
+</body>
+</html>
